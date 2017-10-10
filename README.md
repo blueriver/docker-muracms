@@ -1,4 +1,4 @@
-# MuraCMS Dockerfiles
+# Mura CMS Dockerfiles
 
 The [Docker](https://www.docker.com/) files in this repository may be used to create your own custom Docker container for running [Mura CMS](http://www.getmura.com/). 
 
