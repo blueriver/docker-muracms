@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+
+  muracms:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: stevewithington/muracms:7.1-adobe2016
+    ports:
+      - "8080:8080"
