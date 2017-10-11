@@ -8,7 +8,7 @@ The [Docker](https://www.docker.com/) files in this repository may be used to cr
 The "**Official**" Mura CMS Docker Image, is maintained at https://hub.docker.com/r/blueriver/muracms/.
 
 # Tags
-* `:latest`, `:7.1-blueriver-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/blueriver-lucee5/Dockerfile))
+* `:7.1-blueriver-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/blueriver-lucee5/Dockerfile))
     * Uses a slightly [customized version of Lucee](https://hub.docker.com/r/blueriver/lucee/) as the base Docker image.
 * `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
     * Uses the [`:lucee5` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
@@ -47,32 +47,32 @@ Examples are located under https://github.com/stevewithington/docker-muracms/tre
 
 Unless you've modified any of the `docker-compose.yml` files, the information outlined below for each example should be correct. Feel free to inspect the `docker-compose.yml` files to confirm, and/or to modify as desired.
 
-* **blueriver-lucee5-mysql**
-    * Domain: http://localhost:8111
-        * Usr: `admin`
-        * Pwd: `admin`
-    * Domain: http://localhost:5111
-        * Usr: `root`
-        * Pwd: `5trongP@55w0rd`
-* **commandbox-lucee5-mssql**
-    * Domain: http://localhost:8003
-        * Usr: `admin`
-        * Pwd: `admin`
-    * Domain: http://localhost:5003
-        * Usr: `sa`
-        * Pwd: `5trongP@55w0rd`
-* **commandbox-lucee5-mysql**
+* **blueriver-muracms-mysql**
     * Domain: http://localhost:8001
         * Usr: `admin`
         * Pwd: `admin`
     * Domain: http://localhost:5001
         * Usr: `root`
         * Pwd: `5trongP@55w0rd`
-* **commandbox-lucee5-postgres**
-    * Host Domain: http://localhost:8002
+* **commandbox-adobe2016-mssql**
+    * Domain: http://localhost:8002
         * Usr: `admin`
         * Pwd: `admin`
-    * Host Domain: http://localhost:5002
+    * Domain: http://localhost:5002
+        * Usr: `sa`
+        * Pwd: `5trongP@55w0rd`
+* **commandbox-lucee5-mysql**
+    * Domain: http://localhost:8003
+        * Usr: `admin`
+        * Pwd: `admin`
+    * Domain: http://localhost:5003
+        * Usr: `root`
+        * Pwd: `5trongP@55w0rd`
+* **commandbox-lucee5-postgres**
+    * Host Domain: http://localhost:8004
+        * Usr: `admin`
+        * Pwd: `admin`
+    * Host Domain: http://localhost:5004
         * Usr: `muradb`
         * Pwd: `5trongP@55w0rd`
 

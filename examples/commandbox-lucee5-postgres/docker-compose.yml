@@ -28,7 +28,7 @@ services:
       - ./www/sites:/app/sites
       - ./www/themes:/app/themes
     ports:
-      - "8002:8080"
+      - "8004:8080"
 
   # DB
   svc_muradb:
@@ -41,7 +41,7 @@ services:
     volumes:
       - vol_muradb:/var/lib/postgresql/data
     ports:
-      - "5002:5432"
+      - "5004:5432"
 
 # Mounts
 volumes:
