@@ -4,6 +4,9 @@ The [Docker](https://www.docker.com/) files in this repository may be used to cr
 
 **NOTE:** The example files and Docker images are provided as learning tools only. They are *NOT* intended for production purposes. That said, you could easily use the information as a basis for creating your own custom Docker images for integration into your team's workflow.
 
+# Official Mura CMS Image
+The **Official** Mura CMS Docker Image, is maintained at https://hub.docker.com/r/blueriver/muracms/.
+
 # Tags
 * `:latest`, `:7.1-blueriver-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/blueriver-lucee5/Dockerfile))
     * Uses a slightly [customized version of Lucee](https://hub.docker.com/r/blueriver/lucee/) as the base Docker image.
@@ -11,6 +14,8 @@ The [Docker](https://www.docker.com/) files in this repository may be used to cr
     * Uses the [`:lucee5` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
 * `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/adobe2016/Dockerfile))
     * Uses the [`:adobe2016` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
+* `:7.1-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/lucee5/Dockerfile))
+    * Uses the [Lucee 5 Docker image](https://hub.docker.com/r/lucee/lucee5/)
 
 # Description
 The Docker images and files included here are for developers to use as they consider options for integrating Docker & Mura CMS into their workflow. 
