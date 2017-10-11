@@ -34,9 +34,7 @@ If you're completely new to Docker, the [Docker Documentation](https://docs.dock
 * Modify the `Dockerfile` and/or `docker-compose.yml` file as desired, then build your image.
 
 ## Examples
-Example files are located under [`examples`](https://github.com/stevewithington/docker-muracms/tree/master/examples).
-
-Each example contains a `docker-compose.yml` file. Using your terminal, you may `cd` into the desired example directory, and then issue the `$ docker-compose up` command. 
+Examples are located under https://github.com/stevewithington/docker-muracms/tree/master/examples. Each example contains a `docker-compose.yml` file. Using your terminal, you may `cd` into the desired example directory, and then issue the `$ docker-compose up` command. 
 
 Unless you've modified any of the `docker-compose.yml` files, the information outlined below for each example should be correct. Feel free to inspect the `docker-compose.yml` files to confirm, and/or to modify as desired.
 
