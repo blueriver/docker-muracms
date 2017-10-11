@@ -26,17 +26,16 @@ While some users visiting this repository may have a strong understanding of Doc
 
 If you're completely new to Docker, the [Docker Documentation](https://docs.docker.com/) area is a tremendous resource. You will also find the [Udemy](https://www.udemy.com) course titled "[Docker Mastery: The Complete Toolset From a Docker Captain](https://www.udemy.com/docker-mastery/) extremely helpful in getting you up to speed rather quickly.
 
-The following information assumes you have a copy of the Github repository on your local machine.
+*The following information assumes you have a copy of the [docker-muracms Github repository](https://github.com/stevewithington/docker-muracms) on your local machine.*
 
-* **Building Your Own Images**
-    * To build your own images, you may use one of the `Dockerfile`s and `docker-compose.yml` files located under [image-build-files](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/) section.
-    * Modify the `Dockerfile` and/or `docker-compose.yml` file as desired, then build your image.
-    * Assuming you're using your terminal window and have navigated to the desired directory, you could use `$ docker-compose build --no-cache`
-    * If you wish to publish your image to Docker Hub, after you've logged in: `$ docker push YourDockerUserID/your-image`
+**Building Your Own Images**
 
+* To build your own images, you may use one of the `Dockerfile`s and `docker-compose.yml` files located under the Github repository's [image-build-files](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/) section.
+* Modify the `Dockerfile` and/or `docker-compose.yml` file as desired, then build your image.
 
-* **Using the Existing Images**
-    * Coming soon.
+**Examples**
+
+* Example files are located under [examples](https://github.com/stevewithington/docker-muracms/tree/master/examples)
 
 
 # Issues
