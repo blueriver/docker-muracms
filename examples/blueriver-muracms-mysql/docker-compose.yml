@@ -28,7 +28,7 @@ services:
       - ./www/sites:/var/www/sites
       - ./www/themes:/var/www/themes
     ports:
-      - "8001:8080"
+      - "8001:8888"
 
   # DB
   svc_muradb:
