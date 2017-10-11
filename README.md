@@ -2,6 +2,8 @@
 
 The [Docker](https://www.docker.com/) files in this repository may be used to create your own custom Docker container for running [Mura CMS](http://www.getmura.com/). For Docker images, visit the Docker repository at https://hub.docker.com/r/stevewithington/docker-muracms/.
 
+**NOTE:** The example files and Docker images are provided as learning tools only. They are *NOT* intended for production purposes. That said, you could easily use the information as a basis for creating your own custom Docker images for integration into your team's workflow.
+
 # Tags
 * `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
 * `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/adobe2016/Dockerfile))
@@ -33,6 +35,39 @@ If you're completely new to Docker, the [Docker Documentation](https://docs.dock
 
 ## Examples
 Example files are located under [`examples`](https://github.com/stevewithington/docker-muracms/tree/master/examples).
+
+Each example contains a `docker-compose.yml` file. Using your terminal, you may `cd` into the desired example directory, and then issue the `$ docker-compose up` command. 
+
+Unless you've modified any of the `docker-compose.yml` files, the information outlined below for each example should be correct. Feel free to inspect the `docker-compose.yml` files to confirm, and/or to modify as desired.
+
+* **blueriver-lucee5-mysql**
+    * Domain: http://localhost:8111
+        * Usr: `admin`
+        * Pwd: `admin`
+    * Domain: http://localhost:5111
+        * Usr: `root`
+        * Pwd: `5trongP@55w0rd`
+* **commandbox-lucee5-mssql**
+    * Domain: http://localhost:8003
+        * Usr: `admin`
+        * Pwd: `admin`
+    * Domain: http://localhost:5003
+        * Usr: `sa`
+        * Pwd: `5trongP@55w0rd`
+* **blueriver-lucee5-mysql**
+    * Domain: http://localhost:8001
+        * Usr: `admin`
+        * Pwd: `admin`
+    * Domain: http://localhost:5001
+        * Usr: `root`
+        * Pwd: `5trongP@55w0rd`
+* **blueriver-lucee5-postgres**
+    * Host Domain: http://localhost:8002
+        * Usr: `admin`
+        * Pwd: `admin`
+    * Host Domain: http://localhost:5002
+        * Usr: `muradb`
+        * Pwd: `5trongP@55w0rd`
 
 # Issues
 Please submit issues to https://github.com/stevewithington/docker-muracms/issues
