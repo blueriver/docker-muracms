@@ -1,0 +1,46 @@
+version: '3.3'
+
+services:
+
+  muracms:
+    image: stevewithington/docker-muracms:7.1-blueriver-lucee5
+    depends_on:
+      - svc_muradb
+    environment:
+      MURA_ADMIN_USERNAME: admin
+      MURA_ADMIN_PASSWORD: 5trongP@55w0rd
+      MURA_ADMINEMAIL: youremail@domain.com
+      MURA_APPRELOADKEY: appreload
+      MURA_DATASOURCE: dsn_muracms
+      MURA_DATABASE: muradb
+      MURA_DBTYPE: mysql
+      MURA_DBUSERNAME: root
+      MURA_DBPASSWORD: 5trongP@55w0rd 
+      MURA_DBHOST: svc_muradb
+      MURA_DBPORT: 3306
+      MURA_SITEIDINURLS: "false"
+      MURA_INDEXFILEINURLS: "true"
+      MURA_TESTBOX: "true"
+      MURA_USESSL: "false"
+    volumes:
+      - ./www/modules:/app/modules
+      - ./www/plugins:/app/plugins
+      - ./www/sites:/app/sites
+      - ./www/themes:/app/themes
+    ports:
+      - "8111:8080"
+
+  # DB
+  svc_muradb:
+    image: mysql:5.7.19
+    environment:
+      MYSQL_DATABASE: muradb
+      MYSQL_ROOT_PASSWORD: 5trongP@55w0rd
+    volumes:
+      - vol_muradb:/var/lib/mysql
+    ports:
+      - "5111:3306"
+
+# Mounts
+volumes:
+  vol_muradb:
