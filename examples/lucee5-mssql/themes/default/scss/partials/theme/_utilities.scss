@@ -1,0 +1,9 @@
+.bg-black {
+	background-color: #000 !important;
+}
+
+.mura-region,
+.mura-region-inherited,
+.mura-region-local {
+	@include clearfix;
+}

@@ -1,0 +1,48 @@
+version: '3.3'
+
+services:
+
+  muracms:
+    image: stevewithington/muracms:7.1-lucee5
+    depends_on:
+      - svc_muradb
+    environment:
+      MURA_ADMIN_USERNAME: admin
+      MURA_ADMIN_PASSWORD: 5trongP@55w0rd
+      MURA_ADMINEMAIL: youremail@domain.com
+      MURA_APPRELOADKEY: appreload
+      MURA_DATASOURCE: dsn_muracms
+      MURA_DATABASE: muradb
+      MURA_DBTYPE: postgresql
+      MURA_DBUSERNAME: muradb
+      MURA_DBPASSWORD: 5trongP@55w0rd 
+      MURA_DBHOST: svc_muradb
+      MURA_DBPORT: 5432
+      MURA_SITEIDINURLS: "false"
+      MURA_INDEXFILEINURLS: "true"
+      MURA_TESTBOX: "true"
+      MURA_USESSL: "false"
+    volumes:
+      - ./modules:/app/modules
+      - ./plugins:/app/plugins
+      - ./sites:/app/sites
+      - ./themes:/app/themes
+    ports:
+      - "8002:8080"
+
+  # DB
+  svc_muradb:
+    image: postgres:9.6.5-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: muradb
+      POSTGRES_USER: muradb
+      POSTGRES_PASSWORD: 5trongP@55w0rd
+    volumes:
+      - vol_muradb:/var/lib/postgresql/data
+    ports:
+      - "5002:5432"
+
+# Mounts
+volumes:
+  vol_muradb:

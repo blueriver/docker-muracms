@@ -1,0 +1,12 @@
+// BOOTSTRAP THEME 'EXAMPLE' PAGE
+.theme-showcase {
+	.theme-dropdown .dropdown-menu {
+		display: block;
+		position: static;
+		margin-bottom: 20px;
+	}
+
+	&> p > .btn {
+		margin: 5px 0;
+	}
+}

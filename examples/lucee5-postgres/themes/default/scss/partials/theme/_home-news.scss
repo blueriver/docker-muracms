@@ -1,0 +1,39 @@
+div[data-cssclass="home-news"] {
+	padding: 2em 0 0 0;
+
+	.mura-object-meta {
+		text-align: center;
+	}
+
+	.mura-collection-item {
+		.mura-item-content {
+			a {
+				// .transition(all, 0.3s, ease-in);
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+
+		.mura-item-meta {
+
+			div[class^="mura-item-meta_"] {
+				margin: 1em 0 0 0;
+			}
+
+			.mura-item-meta__date {
+				color: $gray-600;
+			}
+
+			.mura-item-meta__title {
+			}
+
+			.mura-item-meta__summary {
+			}
+
+			.mura-item-meta__credits {
+				color: $gray-600;
+			}
+		}
+	}
+}

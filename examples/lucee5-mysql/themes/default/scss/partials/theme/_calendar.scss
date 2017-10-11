@@ -1,0 +1,54 @@
+/* CALENDAR
+===================================== */
+.mura-calendar {
+	text-align: center;
+
+	table {
+
+		thead {
+			background: $gray-200;
+
+			th, th a {
+				line-height: 1.5;
+				padding: .5em;
+				text-align: center;
+			}
+		}
+
+		td, th {
+			border-collapse: collapse;
+			font-size: 12px;
+		}
+
+		table #previousMonth a,
+		table #nextMonth a {
+			font-weight: normal;
+			font-size: 150%;
+			line-height: 1.1;
+			padding: 0;
+		}
+
+		.table tbody tr:hover td,
+		.table tbody tr:hover th {
+			background: $body-bg;
+		}
+	}
+}
+
+.mura-calendar-nav {
+	th {
+		line-height: 1;
+		padding: 0;
+
+		a {
+			line-height: 1;
+			padding: 2px 2px 4px;
+		}
+	}
+
+	td {
+		padding: 5px 0;
+	}
+}
+
+//end CALENDAR

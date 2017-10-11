@@ -1,0 +1,46 @@
+version: '3.3'
+
+services:
+
+  muracms:
+    image: stevewithington/muracms:7.1-lucee5
+    depends_on:
+      - svc_muradb
+    environment:
+      MURA_ADMIN_USERNAME: admin
+      MURA_ADMIN_PASSWORD: 5trongP@55w0rd
+      MURA_ADMINEMAIL: youremail@domain.com
+      MURA_APPRELOADKEY: appreload
+      MURA_DATASOURCE: dsn_muracms
+      MURA_DATABASE: muradb
+      MURA_DBTYPE: mssql
+      MURA_DBUSERNAME: sa
+      MURA_DBPASSWORD: 5trongP@55w0rd 
+      MURA_DBHOST: svc_muradb
+      MURA_DBPORT: 1433
+      MURA_SITEIDINURLS: "false"
+      MURA_INDEXFILEINURLS: "true"
+      MURA_TESTBOX: "true"
+      MURA_USESSL: "false
+    volumes:
+      - ./modules:/app/modules
+      - ./plugins:/app/plugins
+      - ./sites:/app/sites
+      - ./themes:/app/themes
+    ports:
+      - "8003:8080"
+
+  # DB
+  svc_muradb:
+    image: microsoft/mssql-server-linux:latest
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: 5trongP@55w0rd 
+    volumes:
+      - vol_muradb:/var/opt/mssql
+    ports:
+      - "5003:1433"
+
+# Mounts
+volumes:
+  vol_muradb:

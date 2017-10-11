@@ -1,0 +1,40 @@
+version: '2.1'
+
+services:
+  #Mura Server
+  mura_bs4:
+    image: blueriver/mura:latest
+    environment:
+      MURA_ADMIN_USERNAME: admin
+      MURA_ADMIN_PASSWORD: admin
+      MURA_ADMINEMAIL: example@localhost.com
+      MURA_APPRELOADKEY: appreload
+      MURA_DATASOURCE: muradb
+      MURA_DATABASE: muradb
+      MURA_DBTYPE: mysql
+      MURA_DBUSERNAME: root
+      MURA_DBPASSWORD: NOT_SECURE_CHANGE
+      MURA_DBHOST: mura_bs4_mysql
+      MURA_DBPORT: 3306
+      MURA_SITEIDINURLS: "false"
+      MURA_INDEXFILEINURLS: "true"
+    volumes:
+        - ./:/var/www/themes/default
+        - mura_bs4_sites_data:/var/www/sites
+    ports:
+        - "8888:8888"
+
+  #MySQL
+  mura_bs4_mysql:
+    image: mysql:latest
+    environment:
+        MYSQL_ROOT_PASSWORD: NOT_SECURE_CHANGE
+        MYSQL_DATABASE: muradb
+    volumes:
+        - mura_bs4_mysql_data:/var/lib/mysql
+    ports:
+        - "55557:3306"
+
+volumes:
+    mura_bs4_mysql_data:
+    mura_bs4_sites_data:

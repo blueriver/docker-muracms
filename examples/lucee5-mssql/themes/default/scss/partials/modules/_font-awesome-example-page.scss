@@ -1,0 +1,44 @@
+// FONT AWESOME EXAMPLE PAGE
+.fontawesome-icon-list {
+	[class*="span"] {
+		float:left;
+		min-height:1px;
+		margin-left: 30px;
+	}
+
+	.text-muted {color:#999;}
+
+	.fa-hover a {
+		display:block;
+		color: #222;
+		line-height: 32px;
+		height: 32px;
+		padding-left: 10px;
+		text-decoration: none;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+
+		cursor:auto;
+
+		.fa {
+			width: 32px;
+			font-size: 14px;
+			display: inline-block;
+			text-align: right;
+			margin-right: 10px;
+		}
+
+		&:hover {
+			background-color: #428bca;
+			color: #fff;
+
+			.text-muted { color: #fff;}
+			i.fa {
+				font-size: 28px;
+				vertical-align: -6px;
+			}
+		}
+
+	}
+}
