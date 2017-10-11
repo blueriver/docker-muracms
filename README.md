@@ -1,5 +1,8 @@
 # Mura CMS Dockerfiles
-The [Docker](https://www.docker.com/) files in this repository may be used to create your own custom Docker container for running [Mura CMS](http://www.getmura.com/). For Docker images, visit the Docker repository at  https://hub.docker.com/r/stevewithington/docker-muracms/.
+
+---
+
+The [Docker](https://www.docker.com/) files in this repository may be used to create your own custom Docker container for running [Mura CMS](http://www.getmura.com/). For Docker images, visit the Docker repository at https://hub.docker.com/r/stevewithington/docker-muracms/.
 
 # Tags
 * `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
@@ -20,23 +23,18 @@ Primary thoughts to consider when implementing Docker and Mura CMS into your wor
 Once you have the answers to these questions, you will be able to better select the appropriate Docker image, and `docker-compose` files to use. That said, feel free to play around with all of the included examples.
 
 # Usage & Examples
-This section assumes you are using the [Official Docker Images](https://hub.docker.com/r/stevewithington/docker-muracms/).
-
 While some users visiting this repository may have a strong understanding of Docker, and how it works, there are likely others who are completely new to Docker, and don't know where to start. 
 
 If you're completely new to Docker, the [Docker Documentation](https://docs.docker.com/) area is a tremendous resource. You will also find the [Udemy](https://www.udemy.com) course titled "[Docker Mastery: The Complete Toolset From a Docker Captain](https://www.udemy.com/docker-mastery/) extremely helpful in getting you up to speed rather quickly.
 
-*The following information assumes you have a copy of the [docker-muracms Github repository](https://github.com/stevewithington/docker-muracms) on your local machine.*
+*The following information assumes you have a copy of the [**docker-muracms** Github repository](https://github.com/stevewithington/docker-muracms) on your local machine.*
 
-**Building Your Own Images**
-
-* To build your own images, you may use one of the `Dockerfile`s and `docker-compose.yml` files located under the Github repository's [image-build-files](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/) section.
+## Building Your Own Images
+* To build your own images, you may use one of the `Dockerfile` and `docker-compose.yml` files located under the [`image-build-files`](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/) section.
 * Modify the `Dockerfile` and/or `docker-compose.yml` file as desired, then build your image.
 
-**Examples**
-
-* Example files are located under [examples](https://github.com/stevewithington/docker-muracms/tree/master/examples)
-
+## Examples
+Example files are located under [`examples`](https://github.com/stevewithington/docker-muracms/tree/master/examples).
 
 # Issues
 Please submit issues to https://github.com/stevewithington/docker-muracms/issues

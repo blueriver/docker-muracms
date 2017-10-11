@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+
+  muracms:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: stevewithington/docker-muracms:7.1-blueriver-lucee5
