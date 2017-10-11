@@ -5,7 +5,7 @@ The [Docker](https://www.docker.com/) files in this repository may be used to cr
 **NOTE:** The example files and Docker images are provided as learning tools only. They are *NOT* intended for production purposes. That said, you could easily use the information as a basis for creating your own custom Docker images for integration into your team's workflow.
 
 # Official Mura CMS Image
-The "**Official**" Mura CMS Docker Image, is maintained at https://hub.docker.com/r/blueriver/muracms/.
+The "**Official**" Mura CMS Docker Image, is maintained at https://hub.docker.com/r/blueriver/muracms/. An [example](https://github.com/stevewithington/docker-muracms/tree/master/examples/blueriver-muracms) using this image is also included.
 
 # Tags
 * `:7.1-blueriver-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/blueriver-lucee5/Dockerfile))
