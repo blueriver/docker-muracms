@@ -1,5 +1,5 @@
-# stevewithington/muracms:7.1-adobe2016
-FROM ortussolutions/commandbox:adobe2016
+# stevewithington/docker-muracms:7.1-commandbox-lucee5
+FROM ortussolutions/commandbox:lucee5
 
 ENV APP_DIR="/app"
 

@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   muracms:
-    image: stevewithington/muracms:7.1-lucee5
+    image: stevewithington/docker-muracms:7.1-commandbox-lucee5
     depends_on:
       - svc_muradb
     environment:
@@ -23,10 +23,10 @@ services:
       MURA_TESTBOX: "true"
       MURA_USESSL: "false"
     volumes:
-      - ./modules:/app/modules
-      - ./plugins:/app/plugins
-      - ./sites:/app/sites
-      - ./themes:/app/themes
+      - ./www/modules:/app/modules
+      - ./www/plugins:/app/plugins
+      - ./www/sites:/app/sites
+      - ./www/themes:/app/themes
     ports:
       - "8002:8080"
 

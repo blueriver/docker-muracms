@@ -1,20 +1,45 @@
 # Mura CMS Dockerfiles
-The [Docker](https://www.docker.com/) files in this repository may be used to create your own custom Docker container for running [Mura CMS](http://www.getmura.com/). For Docker images, visit the Docker repository at  https://hub.docker.com/r/stevewithington/muracms/.
+The [Docker](https://www.docker.com/) files in this repository may be used to create your own custom Docker container for running [Mura CMS](http://www.getmura.com/). For Docker images, visit the Docker repository at  https://hub.docker.com/r/stevewithington/docker-muracms/.
 
-## Tags
-* `:7.1-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/lucee5/Dockerfile))
-* `:7.1-adobe2016` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/adobe2016/Dockerfile))
+# Tags
+* `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
+* `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/adobe2016/Dockerfile))
 
-## Description
-Coming soon.
+# Description
+The Docker images and files included here are for developers to use as they consider options for integrating Docker & Mura CMS into their workflow. 
 
-### Examples & Instructions
-Coming soon.
+Primary thoughts to consider when implementing Docker and Mura CMS into your workflow include:
 
-## Usage
-This section assumes you are using the [Official Docker Images](https://hub.docker.com/r/stevewithington/muracms/).
+* Which CFML engine do you want to use? [Adoble ColdFusion](http://www.adobe.com/products/coldfusion-family.html)? Or [Lucee](http://lucee.org/)?
+* Do you want to use one of the convenient [Commandbox](https://hub.docker.com/r/ortussolutions/commandbox/) images for your desired CFML engine, or roll your own?
+* Which database engine do you wish to use? [MySQL](https://hub.docker.com/_/mysql/), [Postgres](https://hub.docker.com/_/postgres/), or [Microsoft SQL Server](https://hub.docker.com/r/microsoft/mssql-server-linux/)?
+* Do you want to be able to modify Mura CMS core files, and only abstract the CFML engine? (*Rare*)
+* Do you want to abstract Mura CMS core files, and simply have them included in the image itself? (*Common*)
+* If abstracting Mura CMS core files, do you want to be able to modify `modules`, `plugins`, `sites`, and/or `themes`? (*Common*)
 
-## Issues
+Once you have the answers to these questions, you will be able to better select the appropriate Docker image, and `docker-compose` files to use. That said, feel free to play around with all of the included examples.
+
+# Usage & Examples
+This section assumes you are using the [Official Docker Images](https://hub.docker.com/r/stevewithington/docker-muracms/).
+
+While some users visiting this repository may have a strong understanding of Docker, and how it works, there are likely others who are completely new to Docker, and don't know where to start. 
+
+If you're completely new to Docker, the [Docker Documentation](https://docs.docker.com/) area is a tremendous resource. You will also find the [Udemy](https://www.udemy.com) course titled "[Docker Mastery: The Complete Toolset From a Docker Captain](https://www.udemy.com/docker-mastery/) extremely helpful in getting you up to speed rather quickly.
+
+The following information assumes you have a copy of the Github repository on your local machine.
+
+* **Building Your Own Images**
+    * To build your own images, you may use one of the `Dockerfile`s and `docker-compose.yml` files located under [image-build-files](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/) section.
+    * Modify the `Dockerfile` and/or `docker-compose.yml` file as desired, then build your image.
+    * Assuming you're using your terminal window and have navigated to the desired directory, you could use `$ docker-compose build --no-cache`
+    * If you wish to publish your image to Docker Hub, after you've logged in: `$ docker push YourDockerUserID/your-image`
+
+
+* **Using the Existing Images**
+    * Coming soon.
+
+
+# Issues
 Please submit issues to https://github.com/stevewithington/docker-muracms/issues
 
 # License

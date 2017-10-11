@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   muracms:
-    image: stevewithington/muracms:7.1-lucee5
+    image: stevewithington/docker-muracms:7.1-commandbox-lucee5
     depends_on:
       - svc_muradb
     environment:
@@ -13,33 +13,33 @@ services:
       MURA_APPRELOADKEY: appreload
       MURA_DATASOURCE: dsn_muracms
       MURA_DATABASE: muradb
-      MURA_DBTYPE: mysql
-      MURA_DBUSERNAME: root
+      MURA_DBTYPE: mssql
+      MURA_DBUSERNAME: sa
       MURA_DBPASSWORD: 5trongP@55w0rd 
       MURA_DBHOST: svc_muradb
-      MURA_DBPORT: 3306
+      MURA_DBPORT: 1433
       MURA_SITEIDINURLS: "false"
       MURA_INDEXFILEINURLS: "true"
       MURA_TESTBOX: "true"
-      MURA_USESSL: "false"
+      MURA_USESSL: "false
     volumes:
-      - ./modules:/app/modules
-      - ./plugins:/app/plugins
-      - ./sites:/app/sites
-      - ./themes:/app/themes
+      - ./www/modules:/app/modules
+      - ./www/plugins:/app/plugins
+      - ./www/sites:/app/sites
+      - ./www/themes:/app/themes
     ports:
-      - "8001:8080"
+      - "8003:8080"
 
   # DB
   svc_muradb:
-    image: mysql:5.7.19
+    image: microsoft/mssql-server-linux:latest
     environment:
-      MYSQL_DATABASE: muradb
-      MYSQL_ROOT_PASSWORD: 5trongP@55w0rd
+      ACCEPT_EULA: Y
+      SA_PASSWORD: 5trongP@55w0rd 
     volumes:
-      - vol_muradb:/var/lib/mysql
+      - vol_muradb:/var/opt/mssql
     ports:
-      - "5001:3306"
+      - "5003:1433"
 
 # Mounts
 volumes:

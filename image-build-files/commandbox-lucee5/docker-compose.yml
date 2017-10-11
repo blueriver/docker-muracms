@@ -6,6 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: stevewithington/muracms:7.1-lucee5
+    image: stevewithington/docker-muracms:7.1-commandbox-lucee5
     ports:
       - "8080:8080"
