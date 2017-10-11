@@ -56,14 +56,14 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
     * Domain: http://localhost:5003
         * Usr: `sa`
         * Pwd: `5trongP@55w0rd`
-* **blueriver-lucee5-mysql**
+* **commandbox-lucee5-mysql**
     * Domain: http://localhost:8001
         * Usr: `admin`
         * Pwd: `admin`
     * Domain: http://localhost:5001
         * Usr: `root`
         * Pwd: `5trongP@55w0rd`
-* **blueriver-lucee5-postgres**
+* **commandbox-lucee5-postgres**
     * Host Domain: http://localhost:8002
         * Usr: `admin`
         * Pwd: `admin`
