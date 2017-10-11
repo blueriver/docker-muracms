@@ -5,7 +5,7 @@ The [Docker](https://www.docker.com/) files in this repository may be used to cr
 **NOTE:** The example files and Docker images are provided as learning tools only. They are *NOT* intended for production purposes. That said, you could easily use the information as a basis for creating your own custom Docker images for integration into your team's workflow.
 
 # Official Mura CMS Image
-The **Official** Mura CMS Docker Image, is maintained at https://hub.docker.com/r/blueriver/muracms/.
+The "**Official**" Mura CMS Docker Image, is maintained at https://hub.docker.com/r/blueriver/muracms/.
 
 # Tags
 * `:latest`, `:7.1-blueriver-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/blueriver-lucee5/Dockerfile))
@@ -34,7 +34,7 @@ Once you have the answers to these questions, you will be able to better select 
 # Usage & Examples
 While some users visiting this repository may have a strong understanding of Docker, and how it works, there are likely others who are completely new to Docker, and don't know where to start. 
 
-If you're completely new to Docker, the [Docker Documentation](https://docs.docker.com/) area is a tremendous resource. You will also find the [Udemy](https://www.udemy.com) course titled "[Docker Mastery: The Complete Toolset From a Docker Captain](https://www.udemy.com/docker-mastery/) extremely helpful in getting you up to speed rather quickly.
+If you're completely new to Docker, the [Docker Documentation](https://docs.docker.com/) area is a tremendous resource. You will also find the [Udemy](https://www.udemy.com) course titled "[Docker Mastery: The Complete Toolset From a Docker Captain](https://www.udemy.com/docker-mastery/)" extremely helpful in getting you up to speed rather quickly.
 
 *The following information assumes you have a copy of the [**docker-muracms** Github repository](https://github.com/stevewithington/docker-muracms) on your local machine.*
 
