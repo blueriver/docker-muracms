@@ -7,6 +7,7 @@ The [Docker](https://www.docker.com/) files in this repository may be used to cr
 # Tags
 * `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
 * `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/adobe2016/Dockerfile))
+* `:7.1-blueriver-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/blueriver-lucee5/Dockerfile))
 
 # Description
 The Docker images and files included here are for developers to use as they consider options for integrating Docker & Mura CMS into their workflow. 
