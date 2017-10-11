@@ -23,10 +23,10 @@ services:
       MURA_TESTBOX: "true"
       MURA_USESSL: "false"
     volumes:
-      - ./www/modules:/app/modules
-      - ./www/plugins:/app/plugins
-      - ./www/sites:/app/sites
-      - ./www/themes:/app/themes
+      - ./www/modules:/var/www/modules
+      - ./www/plugins:/var/www/plugins
+      - ./www/sites:/var/www/sites
+      - ./www/themes:/var/www/themes
     ports:
       - "8001:8080"
 
