@@ -52,7 +52,7 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
     * Database: 
-        * Image: [mysql:5.7.19](https://hub.docker.com/_/mysql/)
+        * Image: [MySQL (mysql:5.7.19)](https://hub.docker.com/_/mysql/)
         * Domain: http://localhost:5001
             * Usr: `root`
             * Pwd: `5trongP@55w0rd`
