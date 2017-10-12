@@ -34,7 +34,7 @@ While some users visiting this repository may have a strong understanding of Doc
 
 If you're completely new to Docker, the [Docker Documentation](https://docs.docker.com/) area is a tremendous resource. You will also find the [Udemy](https://www.udemy.com) course titled "[Docker Mastery: The Complete Toolset From a Docker Captain](https://www.udemy.com/docker-mastery/)" extremely helpful in getting you up to speed rather quickly.
 
-*The following information assumes you have a copy of the [**docker-muracms** Github repository](https://github.com/stevewithington/docker-muracms) on your local machine.*
+*The following information assumes you have a copy of the [**docker-muracms** Github repository](https://github.com/blueriver/docker-muracms) on your local machine.*
 
 ## Building Your Own Images
 * To build your own images, you may use one of the `Dockerfile` and `docker-compose.yml` files located under the [`image-build-files`](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/) section.
