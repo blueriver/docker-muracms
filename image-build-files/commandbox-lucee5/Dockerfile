@@ -1,4 +1,4 @@
-# stevewithington/docker-muracms:7.1-commandbox-lucee5
+# blueriver/docker-muracms:7.1-commandbox-lucee5
 FROM ortussolutions/commandbox:lucee5
 
 ENV APP_DIR="/app"

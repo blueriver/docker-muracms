@@ -1,4 +1,4 @@
-# stevewithington/docker-muracms:7.1-commandbox-adobe2016
+# blueriver/docker-muracms:7.1-commandbox-adobe2016
 FROM ortussolutions/commandbox:adobe2016
 
 ENV APP_DIR="/app"
