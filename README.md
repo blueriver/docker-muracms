@@ -45,7 +45,8 @@ Examples are located under https://github.com/blueriver/docker-muracms/tree/mast
 
 Unless you've modified any of the `docker-compose.yml` files, the information outlined below for each example should be correct. Feel free to inspect the `docker-compose.yml` files to confirm, and/or to modify as desired.
 
-* **blueriver-muracms-mysql**
+* [**blueriver-muracms-mysql**](https://github.com/blueriver/docker-muracms/tree/master/examples/blueriver-muracms-mysql)
+    * This example uses the [**Official** Mura CMS image](https://hub.docker.com/r/blueriver/muracms/).
     * Domain: http://localhost:8001
         * Usr: `admin`
         * Pwd: `admin`
