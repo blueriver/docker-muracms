@@ -47,7 +47,7 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
 
 * [**blueriver-muracms-mysql**](https://github.com/blueriver/docker-muracms/tree/master/examples/blueriver-muracms-mysql)
     * Website: 
-        * Image: ["Official" Mura CMS image](https://hub.docker.com/r/blueriver/muracms/)
+        * Image: ["Official" Mura CMS Docker Image (blueriver/muracms:latest)](https://hub.docker.com/r/blueriver/muracms/)
         * Domain: http://localhost:8001
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
@@ -58,34 +58,34 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
             * Pwd: `5trongP@55w0rd`
 * [**commandbox-adobe2016-mssql**](https://github.com/blueriver/docker-muracms/tree/master/examples/commandbox-adobe2016-mssql)
     * Website: 
-        * Image: [:7.1-commandbox-adobe2016](https://hub.docker.com/r/blueriver/docker-muracms/)
+        * Image: [Custom image using CommandBox as base image (blueriver/docker-muracms:7.1-commandbox-adobe2016)](https://hub.docker.com/r/blueriver/docker-muracms/)
         * Domain: http://localhost:8002
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
     * Database: 
-        * Image: [microsoft/mssql-server-linux:latest](https://hub.docker.com/r/microsoft/mssql-server-linux/)
+        * Image: [Microsoft SQL Server (microsoft/mssql-server-linux:latest)](https://hub.docker.com/r/microsoft/mssql-server-linux/)
         * Domain: http://localhost:5002
             * Usr: `sa`
             * Pwd: `5trongP@55w0rd`
 * [**commandbox-lucee5-mysql**](https://github.com/blueriver/docker-muracms/tree/master/examples/commandbox-lucee5-mysql)
     * Website: 
-        * Image: [:7.1-commandbox-lucee5](https://hub.docker.com/r/blueriver/docker-muracms/)
+        * Image: [Custom image using CommanBox as base image (blueriver/docker-muracms:7.1-commandbox-lucee5)](https://hub.docker.com/r/blueriver/docker-muracms/)
         * Domain: http://localhost:8003
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
     * Database: 
-        * Image: [mysql:5.7.19](https://hub.docker.com/_/mysql/)
+        * Image: [MySQL (mysql:5.7.19)](https://hub.docker.com/_/mysql/)
         * Domain: http://localhost:5003
             * Usr: `root`
             * Pwd: `5trongP@55w0rd`
 * [**commandbox-lucee5-postgres**](https://github.com/blueriver/docker-muracms/tree/master/examples/commandbox-lucee5-postgres)
     * Website: 
-        * Image: [:7.1-commandbox-lucee5](https://hub.docker.com/r/blueriver/docker-muracms/)
+        * Image: [Custom image using CommandBox as base image (blueriver/docker-muracms:7.1-commandbox-lucee5)](https://hub.docker.com/r/blueriver/docker-muracms/)
         * Domain: http://localhost:8004
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
     * Database: 
-        * Image: [postgres:9.6.5-alpine](https://hub.docker.com/_/postgres/) 
+        * Image: [PostgreSQL (postgres:9.6.5-alpine)](https://hub.docker.com/_/postgres/) 
         * Domain: http://localhost:5004
             * Usr: `muradb`
             * Pwd: `5trongP@55w0rd`
