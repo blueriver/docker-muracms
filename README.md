@@ -47,34 +47,34 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
 
 * [**blueriver-muracms-mysql**](https://github.com/blueriver/docker-muracms/tree/master/examples/blueriver-muracms-mysql)
     * This example uses the ["Official" Mura CMS image](https://hub.docker.com/r/blueriver/muracms/).
-        * Domain: http://localhost:8001
+        * Website: http://localhost:8001
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
-        * Domain: http://localhost:5001
+        * Database: http://localhost:5001
             * Usr: `root`
             * Pwd: `5trongP@55w0rd`
-* **commandbox-adobe2016-mssql**
-    * This example uses the [:7.1-commandbox-adobe2016 image](https://hub.docker.com/r/blueriver/docker-muracms/)
-        * Domain: http://localhost:8002
+* [**commandbox-adobe2016-mssql**](https://github.com/blueriver/docker-muracms/tree/master/examples/commandbox-adobe2016-mssql)
+    * This example uses the [:7.1-commandbox-adobe2016 image](https://hub.docker.com/r/blueriver/docker-muracms/). It also leverages the [Microsoft SQL Server](https://hub.docker.com/r/microsoft/mssql-server-linux/) image for the database engine. 
+        * Website: http://localhost:8002
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
-        * Domain: http://localhost:5002
+        * Database: http://localhost:5002
             * Usr: `sa`
             * Pwd: `5trongP@55w0rd`
-* **commandbox-lucee5-mysql**
+* [**commandbox-lucee5-mysql**](https://github.com/blueriver/docker-muracms/tree/master/examples/commandbox-lucee5-mysql)
     * This example uses the [:7.1-commandbox-lucee5 image](https://hub.docker.com/r/blueriver/docker-muracms/)
-        * Domain: http://localhost:8003
+        * Website: http://localhost:8003
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
-        * Domain: http://localhost:5003
+        * Database: http://localhost:5003
             * Usr: `root`
             * Pwd: `5trongP@55w0rd`
-* **commandbox-lucee5-postgres**
+* [**commandbox-lucee5-postgres**](https://github.com/blueriver/docker-muracms/tree/master/examples/commandbox-lucee5-postgres)
     * This example uses the [:7.1-commandbox-lucee5 image](https://hub.docker.com/r/blueriver/docker-muracms/)
-        * Host Domain: http://localhost:8004
+        * WEbsite: http://localhost:8004
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
-        * Host Domain: http://localhost:5004
+        * Database: http://localhost:5004
             * Usr: `muradb`
             * Pwd: `5trongP@55w0rd`
 
