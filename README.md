@@ -137,6 +137,62 @@ This example uses the Lucee Lucee5 image as the base image. It abstracts the Mur
         * Usr: `root`
         * Pwd: `5trongP@55w0rd`
 
+# Sample docker-compose.yml For Mura CMS
+The example below uses the "Official" Mura CMS image, along with MySQL.
+
+```
+version: '3.3'
+
+services:
+
+  muracms:
+    image: blueriver/muracms:latest
+    depends_on:
+      - svc_muradb
+    environment:
+      MURA_ADMIN_USERNAME: admin
+      MURA_ADMIN_PASSWORD: 5trongP@55w0rd
+      MURA_ADMINEMAIL: youremail@domain.com
+      MURA_APPRELOADKEY: appreload
+      MURA_DATASOURCE: dsn_muracms
+      MURA_DATABASE: muradb
+      MURA_DBTYPE: mysql
+      MURA_DBUSERNAME: root
+      MURA_DBPASSWORD: 5trongP@55w0rd 
+      MURA_DBHOST: svc_muradb
+      MURA_DBPORT: 3306
+      MURA_SITEIDINURLS: "false"
+      MURA_INDEXFILEINURLS: "true"
+      MURA_TESTBOX: "true"
+      MURA_USESSL: "false"
+    volumes:
+      - vol_muracms_modules:/var/www/modules
+      - vol_muracms_plugins:/var/www/plugins
+      - vol_muracms_sites:/var/www/sites
+      - vol_muracms_themes:/var/www/themes
+    ports:
+      - "8001:8888"
+
+  # DB
+  svc_muradb:
+    image: mysql:5.7.19
+    environment:
+      MYSQL_DATABASE: muradb
+      MYSQL_ROOT_PASSWORD: 5trongP@55w0rd
+    volumes:
+      - vol_muradb:/var/lib/mysql
+    ports:
+      - "5001:3306"
+
+# Mounts
+volumes:
+  vol_muradb:
+  vol_muracms_modules:
+  vol_muracms_plugins:
+  vol_muracms_sites:
+  vol_muracms_themes:
+```
+
 # Issues
 Please submit issues to https://github.com/blueriver/docker-muracms/issues.
 
