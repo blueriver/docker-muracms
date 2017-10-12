@@ -1,6 +1,6 @@
 # Mura CMS Dockerfiles
 
-The [Docker](https://www.docker.com/) files in this repository may be used to create your own custom Docker container for running [Mura CMS](http://www.getmura.com/). For Docker images, visit the Docker repository at https://hub.docker.com/r/stevewithington/docker-muracms/.
+The [Docker](https://www.docker.com/) files in this repository may be used to create your own custom Docker container for running [Mura CMS](http://www.getmura.com/). For Docker images, visit the Docker repository at https://hub.docker.com/r/blueriver/docker-muracms/.
 
 **NOTE:** The example files and Docker images are provided as learning tools only. They are *NOT* intended for production purposes. That said, you could easily use the information as a basis for creating your own custom Docker images for integration into your team's workflow.
 
@@ -49,28 +49,28 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
     * This example uses the ["Official" Mura CMS image](https://hub.docker.com/r/blueriver/muracms/).
         * Domain: http://localhost:8001
             * Usr: `admin`
-            * Pwd: `admin`
+            * Pwd: `5trongP@55w0rd`
         * Domain: http://localhost:5001
             * Usr: `root`
             * Pwd: `5trongP@55w0rd`
 * **commandbox-adobe2016-mssql**
-    * Domain: http://localhost:8002
-        * Usr: `admin`
-        * Pwd: `admin`
-    * Domain: http://localhost:5002
-        * Usr: `sa`
-        * Pwd: `5trongP@55w0rd`
+        * Domain: http://localhost:8002
+            * Usr: `admin`
+            * Pwd: `5trongP@55w0rd`
+        * Domain: http://localhost:5002
+            * Usr: `sa`
+            * Pwd: `5trongP@55w0rd`
 * **commandbox-lucee5-mysql**
     * Domain: http://localhost:8003
         * Usr: `admin`
-        * Pwd: `admin`
+        * Pwd: `5trongP@55w0rd`
     * Domain: http://localhost:5003
         * Usr: `root`
         * Pwd: `5trongP@55w0rd`
 * **commandbox-lucee5-postgres**
     * Host Domain: http://localhost:8004
         * Usr: `admin`
-        * Pwd: `admin`
+        * Pwd: `5trongP@55w0rd`
     * Host Domain: http://localhost:5004
         * Usr: `muradb`
         * Pwd: `5trongP@55w0rd`
