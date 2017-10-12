@@ -47,12 +47,12 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
 
 * [**blueriver-muracms-mysql**](https://github.com/blueriver/docker-muracms/tree/master/examples/blueriver-muracms-mysql)
     * This example uses the [**Official** Mura CMS image](https://hub.docker.com/r/blueriver/muracms/).
-    * Domain: http://localhost:8001
-        * Usr: `admin`
-        * Pwd: `admin`
-    * Domain: http://localhost:5001
-        * Usr: `root`
-        * Pwd: `5trongP@55w0rd`
+        * Domain: http://localhost:8001
+            * Usr: `admin`
+            * Pwd: `admin`
+        * Domain: http://localhost:5001
+            * Usr: `root`
+            * Pwd: `5trongP@55w0rd`
 * **commandbox-adobe2016-mssql**
     * Domain: http://localhost:8002
         * Usr: `admin`
