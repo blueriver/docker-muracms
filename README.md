@@ -137,7 +137,7 @@ This example uses the Lucee Lucee5 image as the base image. It abstracts the Mur
         * Usr: `root`
         * Pwd: `5trongP@55w0rd`
 
-# Sample docker-compose.yml For Mura CMS
+# Sample `docker-compose.yml` For Mura CMS
 The example below uses the "Official" Mura CMS image, along with MySQL.
 Running `$ docker-compose up` with the file below would be accessible via `http://localhost:8001`.
 
