@@ -54,6 +54,7 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
             * Usr: `root`
             * Pwd: `5trongP@55w0rd`
 * **commandbox-adobe2016-mssql**
+    * This example uses the [:7.1-commandbox-adobe2016 image](https://hub.docker.com/r/blueriver/docker-muracms/)
         * Domain: http://localhost:8002
             * Usr: `admin`
             * Pwd: `5trongP@55w0rd`
@@ -61,19 +62,21 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
             * Usr: `sa`
             * Pwd: `5trongP@55w0rd`
 * **commandbox-lucee5-mysql**
-    * Domain: http://localhost:8003
-        * Usr: `admin`
-        * Pwd: `5trongP@55w0rd`
-    * Domain: http://localhost:5003
-        * Usr: `root`
-        * Pwd: `5trongP@55w0rd`
+    * This example uses the [:7.1-commandbox-lucee5 image](https://hub.docker.com/r/blueriver/docker-muracms/)
+        * Domain: http://localhost:8003
+            * Usr: `admin`
+            * Pwd: `5trongP@55w0rd`
+        * Domain: http://localhost:5003
+            * Usr: `root`
+            * Pwd: `5trongP@55w0rd`
 * **commandbox-lucee5-postgres**
-    * Host Domain: http://localhost:8004
-        * Usr: `admin`
-        * Pwd: `5trongP@55w0rd`
-    * Host Domain: http://localhost:5004
-        * Usr: `muradb`
-        * Pwd: `5trongP@55w0rd`
+    * This example uses the [:7.1-commandbox-lucee5 image](https://hub.docker.com/r/blueriver/docker-muracms/)
+        * Host Domain: http://localhost:8004
+            * Usr: `admin`
+            * Pwd: `5trongP@55w0rd`
+        * Host Domain: http://localhost:5004
+            * Usr: `muradb`
+            * Pwd: `5trongP@55w0rd`
 
 # Issues
 Please submit issues to https://github.com/blueriver/docker-muracms/issues
