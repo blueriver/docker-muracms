@@ -38,7 +38,7 @@ If you're completely new to Docker, the [Docker Documentation](https://docs.dock
 
 ## Building Your Own Images
 * To build your own images, you may use one of the `Dockerfile` and `docker-compose.yml` files located under the [`image-build-files`](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/) section.
-* Modify the `Dockerfile` and/or `docker-compose.yml` file as desired, then build your image.
+* Modify the `Dockerfile` and/or `docker-compose.yml` file as desired, then build your image. (e.g., `$ docker-compose build --no-cache`)
 
 ## Examples
 Examples are located under https://github.com/blueriver/docker-muracms/tree/master/examples. Each example contains a `docker-compose.yml` file. Using your terminal, you may `cd` into the desired example directory, and then issue the `$ docker-compose up` command. 
