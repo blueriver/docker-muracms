@@ -103,18 +103,19 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
             * Domain: http://localhost:5005
                 * Usr: `root`
                 * Pwd: `5trongP@55w0rd`
-* [**lucee5-mysql-nofiles**](https://github.com/blueriver/docker-muracms/tree/master/examples/lucee5-mysql-nofiles)
-    * This example abstracts the Mura CMS core files, and also abstracts the `modules`, `plugins`,  `sites`, and `themes` directories. In other words, all changes are stored in the mounted `volumes`.
-        * Website: 
-            * Image: [Custom image using Lucee as base image (blueriver/docker-muracms:7.1-lucee5)](https://hub.docker.com/r/blueriver/docker-muracms/)
-            * Domain: http://localhost:8005
-                * Usr: `admin`
-                * Pwd: `5trongP@55w0rd`
-        * Database: 
-            * Image: [MySQL (mysql:5.7.19)](https://hub.docker.com/_/mysql/)
-            * Domain: http://localhost:5005
-                * Usr: `root`
-                * Pwd: `5trongP@55w0rd`
+
+### [**lucee5-mysql-nofiles**](https://github.com/blueriver/docker-muracms/tree/master/examples/lucee5-mysql-nofiles)
+* This example abstracts the Mura CMS core files, and also abstracts the `modules`, `plugins`,  `sites`, and `themes` directories. In other words, all changes are stored in the mounted `volumes`.
+    * Website: 
+        * Image: [Custom image using Lucee as base image (blueriver/docker-muracms:7.1-lucee5)](https://hub.docker.com/r/blueriver/docker-muracms/)
+        * Domain: http://localhost:8005
+            * Usr: `admin`
+            * Pwd: `5trongP@55w0rd`
+    * Database: 
+        * Image: [MySQL (mysql:5.7.19)](https://hub.docker.com/_/mysql/)
+        * Domain: http://localhost:5005
+            * Usr: `root`
+            * Pwd: `5trongP@55w0rd`
 
 # Issues
 Please submit issues to https://github.com/blueriver/docker-muracms/issues
