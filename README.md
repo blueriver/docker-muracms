@@ -9,7 +9,7 @@ The "**Official**" Mura CMS Docker Image, is maintained at https://hub.docker.co
 
 # Tags
 * `blueriver/muracms:latest` ([Dockerfile](https://github.com/blueriver/MuraCMS/blob/7.1/core/docker/build/Dockerfile))
-    * The **official** Blue River Mura CMS Docker image.
+    * The "**Official**" Blue River Mura CMS Docker image.
 * `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
     * Uses the [`:lucee5` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
 * `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/commandbox-adobe2016/Dockerfile))
