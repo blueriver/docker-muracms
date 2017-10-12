@@ -6,4 +6,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: stevewithington/docker-muracms:7.1-commandbox-lucee5
+    image: blueriver/docker-muracms:7.1-commandbox-lucee5

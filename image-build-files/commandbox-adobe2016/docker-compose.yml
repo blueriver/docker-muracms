@@ -5,4 +5,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: stevewithington/docker-muracms:7.1-commandbox-adobe2016
+    image: blueriver/docker-muracms:7.1-commandbox-adobe2016
