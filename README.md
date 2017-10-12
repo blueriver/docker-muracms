@@ -5,14 +5,14 @@ The [Docker](https://www.docker.com/) files in this repository may be used to cr
 **NOTE:** The example files and Docker images are provided as learning tools only. They are *NOT* intended for production purposes. That said, you could easily use the information as a basis for creating your own custom Docker images for integration into your team's workflow.
 
 # Official Mura CMS Image
-The "**Official**" Mura CMS Docker Image, is maintained at https://hub.docker.com/r/blueriver/muracms/. An [example](https://github.com/stevewithington/docker-muracms/tree/master/examples/blueriver-muracms) using this image is also included.
+The "**Official**" Mura CMS Docker Image, is maintained at https://hub.docker.com/r/blueriver/muracms/. An [example](https://github.com/blueriver/docker-muracms/tree/master/examples/blueriver-muracms) using this image is also included.
 
 # Tags
 * `blueriver/muracms:latest` ([Dockerfile](https://github.com/blueriver/MuraCMS/blob/7.1/core/docker/build/Dockerfile))
     * The **official** Blue River Mura CMS Docker image.
-* `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
+* `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
     * Uses the [`:lucee5` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
-* `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/adobe2016/Dockerfile))
+* `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/adobe2016/Dockerfile))
     * Uses the [`:adobe2016` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
 
 # Description
@@ -37,11 +37,11 @@ If you're completely new to Docker, the [Docker Documentation](https://docs.dock
 *The following information assumes you have a copy of the [**docker-muracms** Github repository](https://github.com/stevewithington/docker-muracms) on your local machine.*
 
 ## Building Your Own Images
-* To build your own images, you may use one of the `Dockerfile` and `docker-compose.yml` files located under the [`image-build-files`](https://github.com/stevewithington/docker-muracms/blob/master/image-build-files/) section.
+* To build your own images, you may use one of the `Dockerfile` and `docker-compose.yml` files located under the [`image-build-files`](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/) section.
 * Modify the `Dockerfile` and/or `docker-compose.yml` file as desired, then build your image.
 
 ## Examples
-Examples are located under https://github.com/stevewithington/docker-muracms/tree/master/examples. Each example contains a `docker-compose.yml` file. Using your terminal, you may `cd` into the desired example directory, and then issue the `$ docker-compose up` command. 
+Examples are located under https://github.com/blueriver/docker-muracms/tree/master/examples. Each example contains a `docker-compose.yml` file. Using your terminal, you may `cd` into the desired example directory, and then issue the `$ docker-compose up` command. 
 
 Unless you've modified any of the `docker-compose.yml` files, the information outlined below for each example should be correct. Feel free to inspect the `docker-compose.yml` files to confirm, and/or to modify as desired.
 
@@ -75,7 +75,7 @@ Unless you've modified any of the `docker-compose.yml` files, the information ou
         * Pwd: `5trongP@55w0rd`
 
 # Issues
-Please submit issues to https://github.com/stevewithington/docker-muracms/issues
+Please submit issues to https://github.com/blueriver/docker-muracms/issues
 
 # License
 Apache License, Version 2.0
