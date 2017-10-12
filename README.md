@@ -12,8 +12,10 @@ The "**Official**" Mura CMS Docker Image, is maintained at https://hub.docker.co
     * The **official** Blue River Mura CMS Docker image.
 * `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
     * Uses the [`:lucee5` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
-* `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/adobe2016/Dockerfile))
+* `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/commandbox-adobe2016/Dockerfile))
     * Uses the [`:adobe2016` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
+* `:7.1-lucee5` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/lucee5/Dockerfile))
+    * Uses the [`:lucee5` Lucee Docker image](https://hub.docker.com/r/lucee/lucee5) as the base image.
 
 # Description
 The Docker images and files included here are for developers to use as they consider options for integrating Docker & Mura CMS into their workflow. 
