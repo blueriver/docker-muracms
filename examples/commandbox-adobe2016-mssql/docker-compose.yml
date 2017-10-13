@@ -4,7 +4,8 @@ services:
 
   muracms:
     build:
-      context: https://github.com/blueriver/docker-muracms.git#:examples/commandbox-adobe2016-mssql
+      context: .
+      # context: https://github.com/blueriver/docker-muracms.git#:examples/commandbox-adobe2016-mssql
     image: blueriver/docker-muracms:7.1-commandbox-adobe2016
     depends_on:
       - svc_muradb

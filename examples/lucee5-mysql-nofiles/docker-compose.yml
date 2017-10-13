@@ -4,7 +4,8 @@ services:
 
   muracms:
     build:
-      context: https://github.com/blueriver/docker-muracms.git#:examples/lucee5-mysql-nofiles
+      context: .
+      # context: https://github.com/blueriver/docker-muracms.git#:examples/lucee5-mysql-nofiles
     image: blueriver/docker-muracms:7.1-lucee5
     depends_on:
       - svc_muradb

@@ -4,7 +4,8 @@ services:
 
   muracms:
     build:
-      context: https://github.com/blueriver/docker-muracms.git#:examples/commandbox-lucee5-postgres
+      context: .
+      # context: https://github.com/blueriver/docker-muracms.git#:examples/commandbox-lucee5-postgres
     image: blueriver/docker-muracms:7.1-commandbox-lucee5
     depends_on:
       - svc_muradb
