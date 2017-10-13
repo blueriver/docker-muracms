@@ -149,7 +149,7 @@ To build a new image (to get the latest updates) and then run it, use `$ docker-
 
 # Sample `docker-compose.yml` For Mura CMS
 The example below uses the "Official" Mura CMS image, along with MySQL.
-Running `$ docker-compose up` with the file below would be accessible via `http://localhost:8001`.
+Running `$ docker-compose up` with the file below would be accessible via `http://localhost:8888`.
 
 ```
 version: '3.3'
