@@ -3,6 +3,8 @@ version: '3.3'
 services:
 
   muracms:
+    build:
+      context: https://github.com/blueriver/docker-muracms.git#:examples/lucee5-mysql
     image: blueriver/docker-muracms:7.1-lucee5
     depends_on:
       - svc_muradb

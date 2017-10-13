@@ -1,7 +1,7 @@
-# blueriver/docker-muracms:7.1-commandbox-lucee5
-FROM ortussolutions/commandbox:lucee5
+# blueriver/docker-muracms:7.1-lucee5
+FROM lucee/lucee5:latest
 
-ENV APP_DIR="/app"
+ENV APP_DIR="/var/www"
 
 RUN apt-get update && apt-get install -y git \
     && rm -rf /var/lib/apt/lists/* \
@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y git \
     && cp -R MuraCMS/. ${APP_DIR} \
     && rm -rf MuraCMS
 
-EXPOSE 8080 8443
+EXPOSE 8888

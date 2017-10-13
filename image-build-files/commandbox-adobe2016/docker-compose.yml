@@ -1,8 +1,0 @@
-version: '3.3'
-
-services:
-  muracms:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: blueriver/docker-muracms:7.1-commandbox-adobe2016

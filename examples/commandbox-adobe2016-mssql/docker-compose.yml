@@ -3,6 +3,8 @@ version: '3.3'
 services:
 
   muracms:
+    build:
+      context: https://github.com/blueriver/docker-muracms.git#:examples/commandbox-adobe2016-mssql
     image: blueriver/docker-muracms:7.1-commandbox-adobe2016
     depends_on:
       - svc_muradb
@@ -39,7 +41,7 @@ services:
     volumes:
       - vol_muradb:/var/opt/mssql
     ports:
-      - "5003:1433"
+      - "5002:1433"
 
 # Mounts
 volumes:

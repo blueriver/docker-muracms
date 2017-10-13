@@ -39,7 +39,7 @@ If you're completely new to Docker, the [Docker Documentation](https://docs.dock
 *The following information assumes you have a copy of the [**docker-muracms** Github repository](https://github.com/blueriver/docker-muracms) on your local machine.*
 
 ## Building Your Own Images
-* To build your own images, you may use one of the `Dockerfile` and `docker-compose.yml` files located under the [`image-build-files`](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/) section.
+* To build your own images, you may use one of the `Dockerfile` and/or `docker-compose.yml` files located under any of the examples.
 * Modify the `Dockerfile` and/or `docker-compose.yml` file as desired, then build your image. (e.g., `$ docker-compose build --no-cache`)
 
 ## Examples
@@ -66,6 +66,8 @@ This example uses the "Official" Mura CMS Docker image as the base image. It abs
 
 This example uses the CommandBox Adobe2016 image as the base image. It abstracts the Mura CMS core files, and includes host directories under the `www` directory for editing `modules`, `plugins`, `sites`, and `themes`. The Microsoft SQL Server database image is added in the [`docker-compose.yml`](https://github.com/blueriver/docker-muracms/blob/master/examples/commandbox-adobe2016-mssql/docker-compose.yml) file. To run this example "as-is", you should be able to simply run `$ docker-compose up` from within the `examples/commandbox-adobe2016-mssql` directory.
 
+To build a new image (to get the latest updates) and then run it, use `$ docker-compose build --no-cache && docker-compose up`. Your site should be available, after the scripts have finished running.
+
 * Website: 
     * Image: [blueriver/docker-muracms:7.1-commandbox-adobe2016](https://hub.docker.com/r/blueriver/docker-muracms/)
     * Domain: http://localhost:8002
@@ -80,6 +82,8 @@ This example uses the CommandBox Adobe2016 image as the base image. It abstracts
 ### [**commandbox-lucee5-mysql**](https://github.com/blueriver/docker-muracms/tree/master/examples/commandbox-lucee5-mysql)
 
 This example uses the CommandBox Lucee5 image as the base image. It abstracts the Mura CMS core files, and includes host directories under the `www` directory for editing `modules`, `plugins`, `sites`, and `themes`. The MySQL database image is added in the [`docker-compose.yml`](https://github.com/blueriver/docker-muracms/blob/master/examples/commandbox-lucee5-mysql/docker-compose.yml) file. To run this example "as-is", you should be able to simply run `$ docker-compose up` from within the `examples/commandbox-lucee5-mysql` directory.
+
+To build a new image (to get the latest updates) and then run it, use `$ docker-compose build --no-cache && docker-compose up`. Your site should be available, after the scripts have finished running.
 
 * Website: 
     * Image: [blueriver/docker-muracms:7.1-commandbox-lucee5](https://hub.docker.com/r/blueriver/docker-muracms/)
@@ -96,6 +100,8 @@ This example uses the CommandBox Lucee5 image as the base image. It abstracts th
 
 This example also uses the CommandBox Lucee5 image as the base image. It abstracts the Mura CMS core files, and includes host directories under the `www` directory for editing `modules`, `plugins`, `sites`, and `themes`. The Postgres database image is added in the [`docker-compose.yml`](https://github.com/blueriver/docker-muracms/blob/master/examples/commandbox-lucee5-postgres/docker-compose.yml) file. To run this example "as-is", you should be able to simply run `$ docker-compose up` from within the `examples/commandbox-lucee5-postgres` directory.
 
+To build a new image (to get the latest updates) and then run it, use `$ docker-compose build --no-cache && docker-compose up`. Your site should be available, after the scripts have finished running.
+
 * Website: 
     * Image: [blueriver/docker-muracms:7.1-commandbox-lucee5](https://hub.docker.com/r/blueriver/docker-muracms/)
     * Domain: http://localhost:8004
@@ -111,6 +117,8 @@ This example also uses the CommandBox Lucee5 image as the base image. It abstrac
 
 This example uses the Lucee Lucee5 image as the base image. It abstracts the Mura CMS core files, and includes host directories under the `www` directory for editing `modules`, `plugins`, `sites`, and `themes`. The MySQL database image is added in the [`docker-compose.yml`](https://github.com/blueriver/docker-muracms/blob/master/examples/lucee5-mysql/docker-compose.yml) file. To run this example "as-is", you should be able to simply run `$ docker-compose up` from within the `examples/lucee5-mysql` directory.
 
+To build a new image (to get the latest updates) and then run it, use `$ docker-compose build --no-cache && docker-compose up`. Your site should be available, after the scripts have finished running.
+
 * Website: 
     * Image: [blueriver/docker-muracms:7.1-lucee5](https://hub.docker.com/r/blueriver/docker-muracms/)
     * Domain: http://localhost:8005
@@ -125,6 +133,8 @@ This example uses the Lucee Lucee5 image as the base image. It abstracts the Mur
 ### [**lucee5-mysql-nofiles**](https://github.com/blueriver/docker-muracms/tree/master/examples/lucee5-mysql-nofiles)
 
 This example uses the Lucee Lucee5 image as the base image. It abstracts the Mura CMS core files, and *also abstracts* the `modules`, `plugins`,  `sites`, and `themes` directories. In other words, all changes are stored in the mounted `volumes`.  The MySQL database image is added in the [`docker-compose.yml`](https://github.com/blueriver/docker-muracms/blob/master/examples/lucee5-mysql-nofiles/docker-compose.yml) file. To run this example "as-is", you should be able to simply run `$ docker-compose up` from within the `examples/lucee5-mysql-nofiles` directory. To view the volumes created, you can always run `$ docker image ls`.
+
+To build a new image (to get the latest updates) and then run it, use `$ docker-compose build --no-cache && docker-compose up`. Your site should be available, after the scripts have finished running.
 
 * Website: 
     * Image: [blueriver/docker-muracms:7.1-lucee5](https://hub.docker.com/r/blueriver/docker-muracms/)
