@@ -182,7 +182,7 @@ services:
       - vol_muracms_sites:/var/www/sites
       - vol_muracms_themes:/var/www/themes
     ports:
-      - "8001:8888"
+      - "8888:8888"
 
   # DB
   svc_muradb:
@@ -193,7 +193,7 @@ services:
     volumes:
       - vol_muradb:/var/lib/mysql
     ports:
-      - "5001:3306"
+      - "5555:3306"
 
 # Mounts
 volumes:
