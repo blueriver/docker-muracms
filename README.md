@@ -10,11 +10,11 @@ The "**Official**" Mura CMS Docker Image, is maintained at https://hub.docker.co
 # Tags
 * `blueriver/muracms:latest` ([Dockerfile](https://github.com/blueriver/MuraCMS/blob/7.1/core/docker/build/Dockerfile))
     * The "**Official**" Blue River Mura CMS Docker image.
-* `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/commandbox-lucee5/Dockerfile))
+* `:7.1-commandbox-lucee5` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/examples/commandbox-lucee5/Dockerfile))
     * Uses the [`:lucee5` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
-* `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/commandbox-adobe2016/Dockerfile))
+* `:7.1-commandbox-adobe2016` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/examples/commandbox-adobe2016-mssql/Dockerfile
     * Uses the [`:adobe2016` CommandBox Docker image](https://hub.docker.com/r/ortussolutions/commandbox/) as the base image.
-* `:7.1-lucee5` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/image-build-files/lucee5/Dockerfile))
+* `:7.1-lucee5` ([Dockerfile](https://github.com/blueriver/docker-muracms/blob/master/examples/lucee5/Dockerfile))
     * Uses the [`:lucee5` Lucee Docker image](https://hub.docker.com/r/lucee/lucee5) as the base image.
 
 # Description
