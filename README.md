@@ -1,11 +1,16 @@
+# Official Mura Image
+
+Unless you have a special need we recommend that you start with the "**Official**" Mura Docker Image.
+
+The "**Official**" Mura Docker Image, is maintained at https://hub.docker.com/r/blueriver/mura/. An [example](https://github.com/blueriver/docker-muracms/tree/master/examples/blueriver-muracms) using this image is also included.
+
+A useful example of using the "**Official**" Docker Image theme development can be found at https://github.com/blueriver/MuraBootstrap4.
+
 # Mura Dockerfiles
 
 The [Docker](https://www.docker.com/) files in this repository may be used to create your own custom Docker container for running [Mura](http://www.getmura.com/). For Docker images, visit the Docker repository at https://hub.docker.com/r/blueriver/docker-muracms/.
 
 **NOTE:** The example files and Docker images are provided as learning tools only. They are *NOT* intended for production purposes. That said, you could easily use the information as a basis for creating your own custom Docker images for integration into your team's workflow.
-
-# Official Mura Image
-The "**Official**" Mura Docker Image, is maintained at https://hub.docker.com/r/blueriver/mura/. An [example](https://github.com/blueriver/docker-muracms/tree/master/examples/blueriver-muracms) using this image is also included.
 
 # Tags
 * `blueriver/mura:latest` ([Dockerfile](https://github.com/blueriver/MuraCMS/blob/7.1/core/docker/build/Dockerfile))
