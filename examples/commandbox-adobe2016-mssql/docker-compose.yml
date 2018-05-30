@@ -25,6 +25,7 @@ services:
       MURA_INDEXFILEINURLS: "true"
       MURA_TESTBOX: "true"
       MURA_USESSL: "false"
+      MURA_ALLOWAUTOUPDATES: "false"
     volumes:
       - ./www/modules:/app/modules
       - ./www/plugins:/app/plugins
