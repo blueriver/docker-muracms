@@ -32,7 +32,7 @@ services:
 
   # DB
   svc_muradb:
-    image: mysql:5.7.19
+    image: mysql:latest
     environment:
       MYSQL_DATABASE: muradb
       MYSQL_ROOT_PASSWORD: 5trongP@55w0rd
