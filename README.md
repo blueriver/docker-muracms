@@ -2,7 +2,7 @@
 
 Unless you have a special need we recommend that you start with the "**Official**" Mura Docker Image.
 
-The "**Official**" Mura Docker Image, is maintained at https://hub.docker.com/r/blueriver/mura/. An [example](https://github.com/blueriver/docker-muracms/tree/master/examples/blueriver-muracms) using this image is also included.
+The "**Official**" Mura Docker Image, is maintained at https://hub.docker.com/r/blueriver/mura/. An [example](https://github.com/blueriver/docker-muracms/tree/master/examples/blueriver-muracms-mysql) using this image is also included.
 
 A useful example of using the "**Official**" Docker Image for **theme development** can be found at https://github.com/blueriver/MuraBootstrap4.
 
