@@ -17,6 +17,8 @@ services:
       MURA_DATASOURCE: dsn_muracms
       MURA_DATABASE: muradb
       MURA_DBTYPE: mysql
+      MURA_DBCONNECTIONSTRING: "jdbc:mysql://svc_muradb:3306/muradb?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true"
+      MURA_DBCLASS: com.mysql.jdbc.Driver
       MURA_DBUSERNAME: root
       MURA_DBPASSWORD: 5trongP@55w0rd 
       MURA_DBHOST: svc_muradb
